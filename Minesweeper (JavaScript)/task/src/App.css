@@ -2,11 +2,15 @@
 
 
 .App {
-  text-align: center;
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 5vmin;
   pointer-events: none;
 }
 
@@ -17,15 +21,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: "Roboto", cursive;
   font-size: calc(10px + 2vmin);
   color: white;
+  border: #61dafb 1px solid;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 5px red;
 }
 
 .App-link {
@@ -40,3 +44,32 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*----------Custom CSS----------------*/
+
+.game-header, .stats-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.game-header {
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: black;
+}
+
