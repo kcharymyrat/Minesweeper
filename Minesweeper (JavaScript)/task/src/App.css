@@ -59,12 +59,34 @@
   justify-content: center;
 }
 
+/*.table {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-around;*/
+/*  margin-bottom: 5px;*/
+/*  gap: 5px;*/
+/*}*/
+
+/*.field {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  align-items: center;*/
+/*  justify-content: space-around;*/
+/*  gap: 5px;*/
+/*}*/
+
+/*.cell {*/
+/*  width: 30px;*/
+/*  height: 30px;*/
+/*  background: black;*/
+/*}*/
+
+
 .field {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  gap: 5px 5px;
 }
 
 .cell {
@@ -73,3 +95,17 @@
   background: black;
 }
 
+/* Stage 2*/
+/*.field {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  align-items: center;*/
+/*  justify-content: space-around;*/
+/*  margin-bottom: 5px;*/
+/*}*/
+
+/*.cell {*/
+/*  width: 30px;*/
+/*  height: 30px;*/
+/*  background: black;*/
+/*}*/

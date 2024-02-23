@@ -238,7 +238,7 @@ files:
   - name: src/bomb.svg
     visible: true
     learner_created: true
-feedback_link: https://hyperskill.org/projects/108/stages/586/implement#comment
+feedback_link: https://hyperskill.org/learn/step/9741#comment
 status: Solved
 feedback:
   message: Congratulations!
