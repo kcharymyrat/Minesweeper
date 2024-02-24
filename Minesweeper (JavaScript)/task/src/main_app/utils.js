@@ -1,4 +1,4 @@
-import {STATUS_CLOSED} from "./configs";
+import Cell from "./Cell";
 
 const createRandomBombField = (rows, cols) => {
     const field = [];
@@ -7,9 +7,12 @@ const createRandomBombField = (rows, cols) => {
         const innerField = []
         for (let j = 0; j < cols; j++) {
             if (randomIndex === j) {
-                innerField.push({ "status": STATUS_CLOSED, "isBomb": true});
+                // innerField.push({ "status": STATUS_CLOSED, "isBomb": true});
+                const cell = new Cell(i, j);
+                cell.setBomb();
+                innerField.push(cell);
             } else {
-                innerField.push({ "status": STATUS_CLOSED, "isBomb": false});
+                innerField.push(new Cell(i, j));
             }
         }
         field.push(innerField);

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-
+import image from "../static/img/target.svg"
 
 const Field = ({field, cellClass }) => {
     const handleLeftClick = (e, i, j) => {
         // Handle left click logic here
-        console.log(`Left clicked on cell (${i}, ${j})`);
-        e.target.style = {"background": "blue"}
+        const cell = field[i][j];
+        console.log(`Left clicked on cell (${i}, ${j}) , ${cell}`);
+        e.target.classList.add("empty-cell");
         console.log(e.target);
     };
 
@@ -13,8 +14,10 @@ const Field = ({field, cellClass }) => {
         // Prevent default right-click behavior (context menu)
         e.preventDefault();
 
-        // Handle right click logic here
-        console.log(`Right clicked on cell (${i}, ${j})`);
+        const img = document.createElement("img");
+        img.src = `${image}`;
+        img.classList.add("cell-image");
+        e.target.appendChild(img);
     };
 
 

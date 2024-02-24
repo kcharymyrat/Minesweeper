@@ -105,7 +105,7 @@ files:
         document.getElementById('root')
       );
     learner_created: false
-  - name: src/logo.svg
+  - name: src/static/img/logo.svg
     visible: true
     text: |
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
@@ -307,7 +307,7 @@ files:
       }, 30000)
     
     learner_created: false
-  - name: src/bomb.svg
+  - name: src/static/img/bomb.svg
     visible: true
     text: |-
       <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
@@ -341,17 +341,18 @@ files:
       
       </svg>
     learner_created: true
-  - name: src/target.svg
+  - name: src/static/img/target.svg
     visible: true
     learner_created: true
-  - name: src/fired.svg
+  - name: src/static/img/fired.svg
+    visible: true
+    learner_created: true
+  - name: src/main_app/Cell.js
     visible: true
     learner_created: true
 feedback_link: https://hyperskill.org/learn/step/9743#comment
-status: Failed
+status: Solved
 feedback:
-  message: "Error: Timeout of 30000ms exceeded. For async tests and hooks, ensure\
-    \ \"done()\" is called; if returning a Promise, ensure it resolves. (D:\\JetBrainsWork\\\
-    Minesweeper (JavaScript)\\Minesweeper (JavaScript)\\task\\test\\test.js)"
-  time: "Fri, 23 Feb 2024 07:55:51 UTC"
+  message: Congratulations!
+  time: "Sat, 24 Feb 2024 08:47:08 UTC"
 record: 3

@@ -59,30 +59,6 @@
   justify-content: center;
 }
 
-/*.table {*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  flex-direction: column;*/
-/*  justify-content: space-around;*/
-/*  margin-bottom: 5px;*/
-/*  gap: 5px;*/
-/*}*/
-
-/*.field {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  align-items: center;*/
-/*  justify-content: space-around;*/
-/*  gap: 5px;*/
-/*}*/
-
-/*.cell {*/
-/*  width: 30px;*/
-/*  height: 30px;*/
-/*  background: black;*/
-/*}*/
-
-
 .field {
   display: grid;
   grid-template-columns: repeat(8, auto);
@@ -92,20 +68,18 @@
 .cell {
   width: 30px;
   height: 30px;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 5px;
   background: black;
 }
 
-/* Stage 2*/
-/*.field {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  align-items: center;*/
-/*  justify-content: space-around;*/
-/*  margin-bottom: 5px;*/
-/*}*/
+.empty-cell {
+  border: #61dafb 1px solid;
+  box-shadow: 0 0 2px 2px red;
+}
 
-/*.cell {*/
-/*  width: 30px;*/
-/*  height: 30px;*/
-/*  background: black;*/
-/*}*/
+.cell-image {
+  width: 27px;
+  height: 27px;
+}
