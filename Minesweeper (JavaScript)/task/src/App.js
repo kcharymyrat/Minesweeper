@@ -6,6 +6,7 @@ import Field from "./main_app/Field";
 import {createRandomBombField} from "./main_app/utils";
 import {CELL_CLASS, COLS_NUM, ROWS_NUM} from "./main_app/configs";
 
+let intervalId;
 
 function App() {
     // Create a state of an array
@@ -13,7 +14,6 @@ function App() {
     const [flags, setFlags] = useState(10);
     const [time, setTime] = useState(0);
     const [gameOver, setGameOver] = useState(false);
-    let intervalId;
 
     useEffect(() => {
         if (time > 0 && !gameOver) {
@@ -59,8 +59,12 @@ function App() {
                 <GameHeader
                     bomb={bomb}
                     flagsLeft={flags}
-                    time={time}
                     formatTime={formatTime(time)}
+                    setField={setField}
+                    setFlags={setFlags}
+                    setTime={setTime}
+                    setGameOver={setGameOver}
+
                 />
                 <Field
                     field={field}

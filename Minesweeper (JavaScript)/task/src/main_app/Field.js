@@ -17,6 +17,7 @@ const Field = ({field, setField, cellClass, flags, setFlags, time, setTime, onGa
         if (cell.isBomb) {
             onGameOver();
             cell.open();
+            openAllBombs(field);
         } else {
             if (cell.adjacentBombs > 0) {
                 cell.open();
@@ -55,6 +56,9 @@ const Field = ({field, setField, cellClass, flags, setFlags, time, setTime, onGa
         cell.close();
         setField(field);
     };
+
+
+
 
 
     return (
@@ -100,6 +104,21 @@ const Field = ({field, setField, cellClass, flags, setFlags, time, setTime, onGa
         </div>
     );
 };
+
+
+const openAllBombs = (field) => {
+    for (let i = 0; i < field.length; i++) {
+        for (let j = 0; j < field[i].length; j++) {
+            console.log(i, j, (i + 1) * (j + 1));
+            if (field[i][j].isBomb) {
+                field[i][j].open();
+                console.log(field[i][j])
+            }
+        }
+    }
+};
+
+
 
 const recursiveOpenEmptyCell = (field, totalRows, totalCols, rowNum, colNum, direction = "all") => {
     console.log(rowNum, colNum);
