@@ -1,6 +1,8 @@
 import React from 'react';
 
-const GameHeader = ({ bomb, flagsLeft, time }) => (
+
+
+const GameHeader = ({ bomb, flagsLeft, time, formatTime }) => (
     <header>
         <div className="game-header">
             <h1>Minesweeper</h1>
@@ -9,7 +11,7 @@ const GameHeader = ({ bomb, flagsLeft, time }) => (
         <div className="stats-menu">
             <p>{flagsLeft}</p>
             <p>smile</p>
-            <p>{time}</p>
+            <p>{formatTime}</p>
         </div>
     </header>
 );

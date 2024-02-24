@@ -3,9 +3,9 @@ class Cell {
         this.row = row;
         this.col = col;
         this.isBomb = false;
+        this.adjacentBombs = 0;
         this.isOpen = false;
         this.isFlagged = false;
-        this.adjacentBombs = 0;
     }
 
     toggleFlag() {
@@ -14,6 +14,10 @@ class Cell {
 
     open() {
         this.isOpen = true;
+    }
+
+    close() {
+        this.isOpen = false;
     }
 
     setBomb() {

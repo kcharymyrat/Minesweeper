@@ -74,7 +74,13 @@
   background: black;
 }
 
-.empty-cell {
+.adj-bomb-num {
+  margin: 0 auto;
+  padding: 0;
+  z-index: 4;
+}
+
+.red-border {
   border: #61dafb 1px solid;
   box-shadow: 0 0 2px 2px red;
 }
@@ -82,4 +88,10 @@
 .cell-image {
   width: 27px;
   height: 27px;
+}
+
+.mine {
+  background: red;
+  margin: 0;
+  padding: 0;
 }
